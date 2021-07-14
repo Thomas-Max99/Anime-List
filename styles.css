@@ -1,0 +1,232 @@
+*,*:after,*:before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+i{
+    font-style:italic;
+}
+
+b{
+    font-weight:bold;
+}
+.header-section{
+    padding:1.25rem;
+}
+.header-section h1{
+    color:#333;
+    font-size:2em;
+    font-weight:bold;
+    padding:.5em 0;
+    text-align:center;
+}
+.header-section p{
+    line-height: 1.25;
+}
+
+.form-section{
+    background-color:#f0f0f0;
+    padding:1em;
+    text-align:center;
+}
+ #new-anime-form{
+     display:none;
+ }
+ .newAnimeButn{
+     background:#290f89;
+     border: 1px solid #380a8d;
+     border-radius:4px;
+     color:#fff;
+     font-weight:bold;
+     margin:1em 0;
+     padding:0.65em 0.75em;
+     text-transform:uppercase;
+     width:45%;
+     transition:all 5ms;
+ }
+ .newAnimeButn:hover{
+     background-color:rgb(255, 136, 0);
+ }
+ #new-anime-btn{
+    background:#290f89;
+    border: 1px solid #380a8d;
+    border-radius:4px;
+    color:#fff;
+    font-weight:bold;
+    margin:1em 0;
+    padding:0.65em 0.75em;
+    text-transform:uppercase;
+    width:45%;
+    transition:all 5ms;
+ }
+ #new-anime-btn:hover{
+    background-color:rgb(255, 136, 0);
+ }
+ .cancel-btn{
+     background-color:red;
+     border: 1px solid red;
+     border-radius:4px;
+     color:#fff;
+     font-weight:bold;
+     margin:1em 0;
+     padding:0.60em 0.60em;
+     text-transform: uppercase;
+     width: 40%;
+     transition:all 5ms
+ }
+ .concel-btn:hover{
+    background-color:rgb(73, 10, 10);
+ }
+
+ .newAnimeBtn:hover{
+     background-color:#0a405f;
+ }
+.generic-button{
+    border: 1px solid #ff0844;
+    border-radius: 5px;
+    background-image:linear-gradient(to top,#ff0844 0%, #ffb112 100%);
+    background-size:cover;
+    cursor:pointer;
+    color:#fff;
+    font-weight:bold;
+    margin: 1em 0;
+    padding: 0.65em 0.75em;
+    text-transform:uppercase;
+    width:45%;
+    transition:.1s;
+}
+.generic-button:hover{
+    background-image:linear-gradient(to top, #ffb112 100%,#ff0844 0%)
+}
+.form-section{
+    background-color:#f0f0f0;
+    padding:1em;
+    text-align:center;
+}
+.inputField{
+    background-color:#fff;
+    border:1px solid #999;
+    border-radius:4px;
+    width:60%;
+    margin-top:0.5rem;
+    padding:.35em;
+}
+.error-message{
+    margin:0 auto;
+    width:60%;
+}
+.error-message p{
+    color:#d32d32;
+    font-weight:500px;
+    line-height: 1.6;
+}
+
+.error-message p:first-child{
+    padding-top:.65em;
+}
+.error-message p:last-child{
+    padding-bottom:0.65em;
+}
+
+
+.anime-list-section{
+    background-color:#04646d;
+    padding:1em 0;
+}
+
+.anime-item{
+    background-color:#f0f0f0;
+    border:1px solid #999;
+    border-radius:3px;
+    border-top:none;
+    margin:0.25em auto;
+    padding:2em;
+    width:90%;
+}
+
+.anime-item-content{
+    padding:1em 0;
+    position:relative;
+    text-align:right;
+}
+
+.anime-item-text{
+    float:left;
+    position:absolute;
+    top:50% ;
+    text-align:left;
+    transform:translateY(-50%);
+    width:80%;
+}
+
+.anime-item-buttons{
+    float:right;
+    position:absolute;
+    top:50% ;
+    right:0;
+    transform:translateY(-50%);
+    width:20%;
+}
+
+.details-btn{
+    background-color:#0f8a93;
+    border:none;
+    border-radius:28px;
+    color:#fff;
+    font-family: 'Poppins',sans-serif;
+    font-size:1em;
+    padding:0.2em 0.75em;
+}
+.details-btn:hover{
+    background-color:#0d747c;
+}
+
+.remove-btn{
+    background-color:none;
+    border:none;
+    color:#ce0707;
+    margin-left:20px;
+    width:40px;
+    height:40px;
+}
+
+.remove-btn:hover{
+    color:#f30a0a;
+   
+}
+.anime-item-details{
+    background-color: #fff;
+    line-height: 1.5;
+    padding:0.5em 0 0.5em 1em;
+    text-align:left;
+}
+
+.anime-item >p{
+    display:none;
+    margin:0.5em 1em;
+}
+@media only screen and(max-width:400px){
+    h1,h2,h3,h4,h5,h6,p{
+        font-size:90%;
+    }
+
+}
+@media only screen and(max-width:550px){
+    .inputField{
+        padding:0.75em;
+    }
+    .details-btn{
+        background-color:#0f8a93;
+        border:none;
+        border-radius:20px;
+        color:#fff;
+        font-family: 'Poppins',sans-serif;
+        font-size:1em;
+        padding:0.2em 0.35em;
+    }
+}

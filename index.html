@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Animes list</title>
+</head>
+<body>
+    <header class="header-section">
+        <h1>Anime List</h1>
+        <p id="intro">
+            
+        </p>
+    </header>
+    <section class="form-section">
+        <button id="new-anime-btn" class="newAnimeButn">New Anime</button>
+        <form id="new-anime-form">
+            <p>
+            <input type="text" class="inputField" id="new-anime-title" placeholder="Title"/>
+            </p>
+            <p>
+                <input type="text" class="inputField" id="new-anime-author" placeholder="Author"/>
+            </p>
+            <p>
+                <input type="number" class="inputField" id="new-anime-year" placeholder="Publication Year"/>
+            </p>
+            <p>
+                <select id="new-anime-category" class="inputField">
+                    <option value="" selected desabled>Select a category</option>
+                    <option value="action"> Action</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="slice-of-life">Slice of life</option>
+                    <option value="horror">Horror</option>
+                    <option value="magic">Magic</option>
+                    <option value="supernatural">Supernatural</option>
+                    <option value="science-fiction">Science and Fiction</option>
+                    <option value="mistery">Mistery</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="romance">Romance</option>
+                    <option value="psychologicaly">Psychologicaly</option>
+                    <option value="cyberpunk">CyberPunk</option>
+                    <option value="games">Games</option>
+                    <option value="ecchi">Ecchi</option>
+                    <option value="demon">Demon</option>
+                    <option value="harem">Harem</option>
+                    <option value="martial-arts">Martials and Arts</option>
+                    <option value="kids">Kids</option>
+                    <option value="historical">Historical</option>
+                    <option value="military">Military</option>
+                    <option value="meccha">Meccha</option>
+                    <option value="hentai">Hentai</option>
+                    <option value="isekai">Isekai</option>
+                    <option value="musical">Musical</option>
+                    <option value="parody">Parody</option>
+                    <option value="police">Police</option>
+                    <option value="post-apocalyptic">Post-Apocalyptic</option>
+                    <option value="school">School</option>
+                    <option value="sienen">Sienen</option>
+                    <option value="shoujo">Shoujo</option>
+                    <option value="shoujo-ai">Shoujo-ai</option>
+                    <option value="shounen">Shounen</option>
+                    <option value="shounen-ai">Shounen-ai</option>
+                    <option value="space">Space</option>
+                    <option value="sports">Sports</option>
+                    <option value="super-power">Super Power</option>
+                    <option value="tragedy">Tragedy</option>
+                    <option value="vampire">Vampire</option>
+                    <option value="yaori">Yaori</option>
+                    <option value="yuri">Yuri</option>
+        
+                </select>
+            </p>
+            <button class="generic-button" id="add-anime-btn" type="submit" >Add Anime</button>
+            <div id="error-message" class="error-message"></div>
+        </form>
+    </section>
+    <section class="anime-list-section">
+        <ul id="anime-list"></ul>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
